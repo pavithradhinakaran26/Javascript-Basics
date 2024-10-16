@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Condition Example</title>
+</head>
+<body>
+
+    <h1>If Condition Example</h1>
+
+   
+    <p id="output">Current Value: 5</p>
+
+   
+    <button onclick="checkValue()">Check Value</button>
+    <button onclick="increaseValue()">Increase Value</button>
+    <button onclick="decreaseValue()">Decrease Value</button>
+
+    <script>
+       
+        let value = 5;
+
+        
+        function checkValue() {
+            if (value > 10) {
+                document.getElementById("output").textContent = "Value is greater than 10";
+            } else if (value < 5) {
+                document.getElementById("output").textContent = "Value is less than 5";
+            } else if (value === 5) {
+                document.getElementById("output").textContent = "Value is exactly 5";
+            } else {
+                document.getElementById("output").textContent = "Value is between 5 and 10";
+            }
+        }
+
+      
+        function increaseValue() {
+            value++;
+            document.getElementById("output").textContent = "Current Value: " + value;
+        }
+
+        
+        function decreaseValue() {
+            value--;
+            document.getElementById("output").textContent = "Current Value: " + value;
+        }
+    </script>
+
+</body>
+</html>

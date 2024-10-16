@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let, var, const Example</title>
+</head>
+<body>
+
+    <h1>let, var, const Example</h1>
+    
+    <button onclick="varExample()">Click for var Example</button>
+    <button onclick="letExample()">Click for let Example</button>
+    <button onclick="constExample()">Click for const Example</button>
+
+    <script>
+       
+        function varExample() {
+            var x = 10;
+            console.log("Initial var x:", x); 
+
+            if (true) {
+                var x = 20; 
+                console.log("Inside block var x:", x);
+            }
+
+            console.log("After block var x:", x); 
+        }
+
+
+        
+        function letExample() {
+            let y = 10;
+            console.log("Initial let y:", y); 
+        }
+        if (true) {
+                let y = 20; 
+                console.log("Inside block let y:", y); 
+            }
+
+            console.log("After block let y:", y); 
+        
+
+        
+        function constExample() {
+            const z = 10;
+            console.log("Initial const z:", z); // 10
+
+            if (true) {
+                const z = 20; 
+                console.log("Inside block const z:", z); 
+            }
+
+            console.log("After block const z:", z);
+        }
+    </script>
+ 
+</body>
+</html>
