@@ -10,11 +10,11 @@
     <h1>Assignment Operators Example</h1>
     
    
-    <p id="output">Current Value: 10</p> 
+    <p id="output">Current Value: 10</p>
     
     
-    <button onclick="additionAssignment()">Add (+= 5)</button>
-    <button onclick="subtractionAssignment()">Subtract (-= 3)</button>
+    <button onclick="additionAssignment()">Add (+= 6)</button>
+    <button onclick="subtractionAssignment()">Subtract (-= 7)</button>
     <button onclick="multiplicationAssignment()">Multiply (*= 2)</button>
     <button onclick="divisionAssignment()">Divide (/= 2)</button>
     <button onclick="modulusAssignment()">Modulus (%= 4)</button>
@@ -28,9 +28,7 @@
             value += 5; 
             document.getElementById("output").textContent = "Current Value: " + value;
         }
-
-       
-        function subtractionAssignment() {s
+       function subtractionAssignment() {
             value -= 3;  
             document.getElementById("output").textContent = "Current Value: " + value;
         }
